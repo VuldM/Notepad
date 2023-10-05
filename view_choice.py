@@ -9,7 +9,8 @@ import show_note
 def choice_user():
     flag = True
     while flag:
-        choice = input('1 - создать заметку\n'
+        choice = input('0 - создать файл\n'
+                       '1 - создать заметку\n'
                        '2 - сохранить заметку\n'
                        '3 - прочитать все заметки\n'
                        '4 - редактировать заметку\n'
@@ -17,6 +18,10 @@ def choice_user():
                        '6 - выход\n'
                        'Сделайте Ваш выбор: ')
         match choice:
+            case '0':
+                working_file.open_file()
+
+
             case '1':
                 add_note.add()
 
