@@ -4,6 +4,7 @@ notepad = {}
 
 
 def next_id():
+    i = 0
     for i in notepad.keys():
         i = int(i)
     i += 1

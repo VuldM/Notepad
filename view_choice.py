@@ -8,7 +8,6 @@ import show_note
 
 def choice_user():
     flag = True
-    add_note.notepad = working_file.open_file()
     while flag:
         choice = input('1 - создать заметку\n'
                        '2 - сохранить заметку\n'
