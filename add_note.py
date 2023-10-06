@@ -1,5 +1,6 @@
 import datetime
 
+import show_note
 import working_file
 
 notepad = {}
@@ -16,9 +17,10 @@ def next_id():
 
 
 def add():
-    id = next_id()
+    uid = next_id()
     date = datetime.datetime.now()
     title = input('Введите заголовок  ')
     text = input('Введите текст  ')
-    notepad.setdefault(id, {'id': id, 'date': str(date), 'title': title, 'text': text})
+    notepad.setdefault(uid, {'id': uid, 'date': str(date), 'title': title, 'text': text})
     working_file.save_file()
+    show_note.show_notepad()

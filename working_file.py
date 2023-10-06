@@ -8,7 +8,7 @@ def open_file():
     try:
         with open(path, 'r', encoding='UTF-8') as file:
             data = json.load(file)
-        print('Файл открыт\n')
+
         return data
     except IOError:
         with open(path, 'w', encoding='UTF-8') as file:
@@ -16,5 +16,6 @@ def open_file():
 
 
 def save_file():
+
     with open(path, 'w', encoding='UTF-8') as file:
         json.dump(add_note.notepad, file, indent=4, ensure_ascii=False)
