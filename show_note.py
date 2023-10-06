@@ -6,5 +6,5 @@ def show_notepad():
     note = working_file.open_file()
     add_note.notepad = note
     for item in add_note.notepad.values():
-        print(item)
+        print(f"id - {item['id']}\nдата - {item['date']}\nзаголовок - {item['title']}\nтекст - {item['text']}\n")
 

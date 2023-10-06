@@ -33,7 +33,7 @@ def choice_user():
 
             case '4':
                 search = input('Что будем редактировать? Введите номер заметки. ')
-                edit_note.edit(search)
+                edit_note.edit(int(search))
 
             case '5':
                 search = input('Что будем удалять? Введите номер заметки. ')
